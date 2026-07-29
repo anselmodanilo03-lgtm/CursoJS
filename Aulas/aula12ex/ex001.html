@@ -44,20 +44,26 @@
     <h1>Hora do dia</h1>
     <div>
         <p>
-            Agora são `${hora}` horas
+            Agora são  horas
         </p>
-        <img src="" alt="Amanhecer do dia" id="imagem">
+        <img src="#" alt="Amanhecer do dia" id="imagem">
     </div>
     <p id="curso">© CursoemVideo</p>
     <script>
-            var agora = new Date()
-            var hora = agora.getHours()
-            var corpo = window.document.body
-            var foto = window.document.getElementById('#imagem')
-            if (hora < 18) {
-                corpo.style.background = '#FFDAB9'
-                foto. = 'imagens/amanhecer.jpg'
-            }
+        var agora = new Date()
+        var hora = agora.getHours()
+        var corpo = window.document.body
+        var foto = window.document.getElementById('imagem')
+        if (hora >= 0 && hora < 6) {
+            corpo.style.background = '#1B1F3B'
+            foto.src = 'imagens/amanhecer.jpg'
+        } else if (hora < 12) {
+            corpo.style.background = '#FF7F50'
+            foto.src = 'imagens/entardecer.jpg'
+        } else if (hora < 18) {
+            corpo.style.background = '#2C3E50'
+            foto.src = 'imagens/noite.jpg'
+        }
     </script>
 </body>
 </html>
