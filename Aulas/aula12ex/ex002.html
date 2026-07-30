@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <style>
+        body {
+            background-color: rgb(0, 140, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 500px;
+            margin: auto;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    <div>
+        <p>Ano de nascimento: <input type="number" name="nasc" id="nasc"></p>
+        Sexo: <input type="radio" name="masc" id="masc" required> Masculino 
+        <input type="radio" name="fem" id="fem" required> Feminino
+        <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        <p id="res"></p>
+    </div>
+
+    <script>
+        function verificar() {
+            var agora = new Date()
+            var ano = agora.getDate()
+            var txtnasc = document.getElementById('nasc')
+            var txtmasc = document.getElementById('masc')
+            var txtfem = document.getElementById('fem')
+            var res = document.getElementById('res')
+            var idade = Number(txtnasc.value)
+            var s = ano - idade
+            var .innerHTML += `${s}`
+        }
+    </script>
+</body>
+</html>

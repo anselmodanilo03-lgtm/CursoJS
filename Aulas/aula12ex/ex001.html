@@ -43,9 +43,7 @@
 <body>
     <h1>Hora do dia</h1>
     <div>
-        <p>
-            Agora são  horas
-        </p>
+        <p id="res"></p>
         <img src="#" alt="Amanhecer do dia" id="imagem">
     </div>
     <p id="curso">© CursoemVideo</p>
@@ -54,9 +52,10 @@
         var hora = agora.getHours()
         var corpo = window.document.body
         var foto = window.document.getElementById('imagem')
+        res.innerHTML += `<p>Agora são ${hora} horas</p>`
         if (hora >= 0 && hora < 6) {
             // Madrugada
-            corpo.style.background = '#1B1F3B'
+            corpo.style.background = '#2C3E50'
             foto.src = 'imagens/madrugada.jpg'
         } else if (hora < 12) {
             // Manhã
