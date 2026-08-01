@@ -13,8 +13,15 @@ section {
     border-radius: 10px;
     background-color: white;
     width: 500px;
+    height: 330px;
     margin: auto;
     text-align: center;
+}
+
+#msg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font: 13pt normal arial;
 }
 
 footer {
