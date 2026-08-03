@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            Ano de nascimento: 
+            <input type="number" name="nasc" id="nasc">
+        </div>
+        <div>
+            Sexo: 
+            <input type="radio" name="sexo" id="masc" required>
+            <label for="masc" >Masculino</label>         
+
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+        </div>
+        <div id="botao">
+            <input type="button" value="Verificar" onclick="Verificar()">
+        </div>
+        <div id="res">
+            Aqui vai o resultado...
+        </div>
+    </section>
     <footer>
         <p>&copy; CursoemVideo</p>
     </footer>
