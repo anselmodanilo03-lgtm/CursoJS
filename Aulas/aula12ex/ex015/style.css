@@ -16,9 +16,8 @@ section {
 
     margin: auto;
     width: 500px;
-    height: 200px;
+    height: auto;
     padding: 20px;
-
     font-family: Arial, Helvetica, sans-serif
 }
 
@@ -26,8 +25,13 @@ div {
     padding-top: 15px;
 }
 
-div#res {
-    text-align: center;
+#foto{ 
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    padding: 10px;
 }
 
 footer {
