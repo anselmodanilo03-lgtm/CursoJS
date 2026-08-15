@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(50, 131, 217);
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.448);
+    width: 500px;
+    height: auto;
+    margin: auto;
+    text-indent: 1.3em;
+}
+
+div {
+    padding-top: 20px;
+    padding-bottom: 2px;
+    font: 13pt normal arial;
+}
+
+p, #res {
+    padding-top: 5px;
+    text-indent: 25px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
