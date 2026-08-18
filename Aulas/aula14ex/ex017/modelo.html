@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="msg">
-            
-        </div>
         <div>
-            <img id="foto" src="amanhecer.jpg" alt="Foto do dia" style="border-radius: 50%" width="250" height="250">
+            Número: 
+            <input type="number" name="tabu" id="tabu">
+            <input type="button" value="Gerar Tabuada" onclick="gerar()">
+        </div>
+        <div id="res">
+            Digite um número acima
         </div>
     </section>
     <footer>

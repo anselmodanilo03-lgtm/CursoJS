@@ -1,17 +1,14 @@
-function carregar() {
-    var agora = new Date()
-    var hora = agora.getHours()
-    var msg = document.getElementById("msg")
-    var img = document.getElementById('foto')
-    msg.innerHTML = `Agora são ${hora} horas`
-    if (hora >= 0 && hora < 12) {
-        document.body.style.background = '#e2cd9f'
-        img.src = 'amanhecer.jpg'
-    } else if (hora >= 12 && hora < 18) {
-        document.body.style.background = '#b9846f'
-        img.src = 'entardecer.jpg'
+function gerar() {
+    var tabuada = Number(document.getElementById('tabu').value)
+    var resp = document.getElementById('res')
+    resp.innerHTML = ''
+    if (tabuada == '') {
+        window.alert('Por favor, digite um número!')
     } else {
-        document.body.style.background = '#515154'
-        img.src = 'noite.jpg'
+        for (var c = 1; c <= 10; c++) {
+            var mult = tabuada * c
+            resp.innerHTML += `${tabuada} x ${c} = ${mult}<br>`
+            resp.style.padding = '0px'
+        }
     }
 }
