@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(50, 131, 217);
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.477);
+
+    margin: auto;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div {
+    padding-top: 15px;
+}
+
+#foto{ 
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+

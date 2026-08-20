@@ -1,14 +1,17 @@
 function gerar() {
-    var tabuada = Number(document.getElementById('tabu').value)
-    var resp = document.getElementById('res')
-    resp.innerHTML = ''
-    if (tabuada == '') {
+    let valor = document.getElementById('tabu').value
+    let tabuada = Number(valor)
+    let tab = document.getElementById('seltab')
+
+    if (valor.length == 0) {
         window.alert('Por favor, digite um número!')
     } else {
-        for (var c = 1; c <= 10; c++) {
-            var mult = tabuada * c
-            resp.innerHTML += `${tabuada} x ${c} = ${mult}<br>`
-            resp.style.padding = '0px'
+        tab.innerHTML = ''
+
+        for (let c = 1; c <= 10; c++) {
+            let item = document.createElement('option')
+            item.text = `${tabuada} x ${c} = ${tabuada * c}`
+            tab.appendChild(item)
         }
     }
 }
