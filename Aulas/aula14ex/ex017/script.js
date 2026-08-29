@@ -1,5 +1,5 @@
 function gerar() {
-    let valor = document.getElementById('tabu').value
+    let valor = Number(document.getElementById('tabu').value)
     let tabuada = Number(valor)
     let tab = document.getElementById('seltab')
 
