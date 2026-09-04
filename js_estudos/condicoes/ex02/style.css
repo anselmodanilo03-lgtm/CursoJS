@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background: rgb(50, 131, 217);
+}
+
+section {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.477);
+
+    margin: auto;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#res {
+    padding-top: 8px;
+}
