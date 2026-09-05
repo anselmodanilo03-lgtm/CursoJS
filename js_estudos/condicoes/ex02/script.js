@@ -9,7 +9,7 @@ function verificar() {
         let numero1 = Number(n1.value)
         let numero2 = Number(n2.value)
 
-        if (maior > menor) {
+        if (numero1 > numero2) {
             resp.innerHTML = `Entre o ${numero1} e o ${numero2}, o maior é ${numero1}`
         } else if (numero2 > numero1) {
             resp.innerHTML = `Entre o ${numero1} e o ${numero2}, o maior é ${numero2}`
