@@ -11,14 +11,22 @@
 
     <section>
         <div>
-            
+            Digite sua idade: <input type="number" name="txtidade" id="txtidade">
         </div>
         <div>
-            
+            Possui carteira de motorista? 
+
+            <input type="radio" name="validar" id="txtsim" value="sim" required> 
+            <label for="txtsim">Sim</label>
+
+            <input type="radio" name="validar" id="txtnao" value="nao"> 
+            <label for="txtnao">Não</label>
         </div>
 
-        <input type="button" value="Verificar">
-        
+        <div>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+
         <div id="res">
             
         </div>
