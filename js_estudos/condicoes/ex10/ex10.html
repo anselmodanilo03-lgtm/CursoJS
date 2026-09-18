@@ -11,14 +11,26 @@
 
     <section>
         <div>
-            
+            Digite sua idade: <input type="number" name="txtidade" id="txtidade">
         </div>
         <div>
-            <input type="button" value="Verificar">
+            <select id="tipo">
+                <option value="">Escolha o ingresso</option>
+                <option value="inteira">Inteira</option>
+                <option value="meia">Meia</option>
+                <option value="vip">VIP</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="button" value="Verificar" onclick="verificar()">    
         </div>
 
         <div id="res">
-            
+            <h3>Preço dos ingressos</h3>
+            <p>Inteira: R$ 40, qualquer idade</p>
+            <p>Meia: R$ 20, é necessário ser menor de 18 anos ou maior que 60 anos</p>
+            <p>VIP: R$ 100, qualquer idade</p>
         </div>
     </section>
     <script src="script.js"></script>
