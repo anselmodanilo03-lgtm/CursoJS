@@ -10,20 +10,11 @@
     <h1>Exercício</h1>
 
     <section>
-        <div>
-            Digite a primeira nota: <input type="number" name="txtnota1" id="txtnota1">
-        </div>
+        <label for="txtsenha">Digite uma senha: </label>
+        <input type="password" name="txtsenha" id="txtsenha" minlength="8">
 
         <div>
-            Digite a segunda nota: <input type="number" name="txtnota2" id="txtnota2">
-        </div>
-
-        <div>
-            Digite a terceira nota: <input type="number" name="txtnota3" id="txtnota3">
-        </div>
-
-        <div>
-            <input type="button" value="Verificar" onclick="verificar()">
+            <input type="button" value="Verificar" onclick="verificar()">            
         </div>
         
         <div id="res">
