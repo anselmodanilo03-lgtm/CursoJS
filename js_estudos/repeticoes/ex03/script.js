@@ -1,4 +1,4 @@
-let soma = 0  // fora da função
+let soma = 0 
 
 function somaNumeros() {
     let numeros = Number(document.getElementById('txtnum').value)
