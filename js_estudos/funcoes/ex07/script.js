@@ -1,7 +1,8 @@
-function contar(inicio, fim) {
-    for (let i = inicio; i <= fim; i++) {
-        console.log(i)
-    }
+function media(n1, n2, n3) {
+    let soma = n1 + n2 + n3
+    return soma / 3
 }
 
-contar(341, 542)
+console.log(media(7, 8, 9))   
+console.log(media(10, 5, 6))  
+console.log(media(4, 4, 4))
