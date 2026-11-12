@@ -1,6 +1,6 @@
 function fatorial(n) {
-    if (n == 0) {
-        return n = 1
+    if (n === 0) {
+        return 1
     }
     else {
         for (let i = n ; i >= 0; i--) {
@@ -10,4 +10,4 @@ function fatorial(n) {
     }
 }
 
-fatorial(5)
+fatorial(0)
