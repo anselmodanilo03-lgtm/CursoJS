@@ -1,13 +1,12 @@
 function fatorial(n) {
-    if (n === 0) {
-        return 1
+    let resul = 1
+    for (let i = resul; i <= n; i++) {
+        resul = i * resul
     }
-    else {
-        for (let i = n ; i >= 0; i--) {
-            let resul = n * i
-            console.log(resul)
-        }
-    }
+    return resul
 }
 
-fatorial(0)
+console.log(fatorial(5))
+console.log(fatorial(3))  
+console.log(fatorial(1))  
+console.log(fatorial(0))
